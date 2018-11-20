@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	text-align: center;
+	font-weight: bolder;
+}
+
+/*Divisões*/
+#geral {
+	width: 80%;
+	height: 400px;
+	margin: 50px;
+	border-width: thin;
+	border-style: solid;
+}
+
+#Cabecalho {
+	background-color: #228B22;
+}
+
+#esquerda {
+	background-color: #CD950C;
+	float: left;
+	width: 25%;
+	height: 90%;
+}
+
+#direita {
+	background-color: #0000FF;
+	float: left;
+	width: 75%;
+	height: 90%;
+}
+
+#rodape {
+	background-color: #FF0000;
+	height: 5.5%;
+	clear: both;
+}

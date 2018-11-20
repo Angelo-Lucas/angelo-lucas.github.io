@@ -1,0 +1,30 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	<script> 
+	$(document).ready(function(){
+		$("h1")
+		.css("color", "#8e2323")
+		.hide()
+		.delay('2000')
+		.fadeIn("slow")
+
+		$("body").css("background","#FFCC00");
+		$("#div1").css({"margin":"30px", "background": "#ffffff"});
+		$("#div1 p").css({color:"#0000ff","font-size":"20px"});
+		$("#div1 h1").css({color:"0000ff", "font-size":"20px"});
+	});
+	</script>
+</head>
+<body>
+	<h1>Seletores hierarquicos</h1>
+	<div id="div1">
+		<h1>Seletores hierarquicos div</h1>
+		<p>Informações importantes</p>
+	</div>
+</body>
+</html>

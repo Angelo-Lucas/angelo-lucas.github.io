@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<meta charset= "UTF-8"/>
+		<title>Formulario</title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+			<legend>Dados pessoais:</legend>
+			Digite seu nome: <input type="text" name="nome" size=20><br><br>
+			Digite seu sobrenome: <input type="text" name="sobrenome" size=20><br><br>
+			Digite sua data de nascimento: <input type="date" name="data de nascimento"><br><br>
+			Digite seu e-mail: <input type="text" name="email" size=20><br><br>
+			Digite seu telefone: <input type="text" name="telefone" size=20><br><br>
+			Sexo: 
+			<input type="radio" name="tSexo" id="iMasc" checked/><label for="iMasc">Masculino</label>
+			<input type="radio" name="tSexo" id="iFem"/><label for="iFem">Feminino</label>
+			</fieldset><br><br>
+			<fieldset>
+			<legend>Endereço:</legend>
+			Rua: <input type="text" name="rua" size=40>
+			Numero: <input type="text" name="numero" size=20><br><br>
+			Bairro: <input type="text" name="bairro" size=20><br><br>
+			Cidade: <input type="text" name="cidade" size=40>
+			Estado: <input type="text" name="estado" size=10><br><br>
+		    </fieldset><br><br>
+		    <fieldset>
+		    <legend>Preferências:</legend>
+			<input type="checkbox" name="visita" value="esporte" checked>Esporte
+			<input type="checkbox" name="visita" value="culinaria">Culinaria
+			<input type="checkbox" name="visita" value="noticias">Noticias
+			<input type="checkbox" name="visita" value="jogos">Jogos
+			<br><br>
+			Outros: <input type="text" name="visita" size=20 maxlenght=20>
+			</fieldset><br><br>
+			 <fieldset>
+		    <legend>Informações acadêmicas:</legend>
+		    Curso: <input type="text" name="curso" size=30>
+		    Periodo:<select name="opcoes">
+				<option value="1º" selected>1º
+				<option value="2º">2º
+				<option value="3º">3º
+				<option value="4º">4º
+				<option value="5º">5º
+				<option value="6º">6º
+				<option value="7º">7º
+				<option value="8º">8º
+				<option value="9º">9º
+				<option value="10º">10º
+			</select>
+			</fieldset>
+			<br><br><br>
+			<fieldset>
+				<legend>Rede Social:</legend>
+				<select name="opcoes">
+				<option value="Facebook" selected>Facebook
+				<option value="Twitter">Twitter
+				<option value="Instagram">Instagram
+				<input type="text" name="rede social" size=40>
+			</fieldset>
+			<fieldset>
+			Deixe sua opinião: <br>
+			<textarea name="opinião" rows=5 cols=30></textarea>
+			</fieldset>
+			<input type="submit" value="Enviar">
+			<input type="reset" value="Limpar">
+			<br>
+		</form>
+	</body>
+</html>

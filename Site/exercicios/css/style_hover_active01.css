@@ -1,0 +1,10 @@
+#imagem {
+	width: 150px;
+	height: 150px;
+}
+
+#imagem:hover {
+	width: 300px;
+	height: 300px;
+	/*ao passar o mouse será aumentada*/
+}

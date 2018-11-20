@@ -1,0 +1,16 @@
+#eleDiv {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	background-color: #4876ff;
+}
+
+#eleDiv:hover {
+	background-color: #8b008b
+	/*ao passar o mouse mudará de cor*/
+}
+
+#eleDiv:active {
+	background-color: #00ff00;
+	/*ao clicar mudará de cor*/
+}

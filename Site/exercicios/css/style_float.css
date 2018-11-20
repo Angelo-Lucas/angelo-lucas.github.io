@@ -1,0 +1,27 @@
+.eleDiv {
+	position: relative;
+	width: 150px; /*largura*/
+	height: 150px; /*altura*/
+	background-color: #4876FF;
+	border: 3px ridge #000088;
+	margin-left: 20px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-left: 10px;
+	float: left;
+}
+
+.eleDiv2 {
+	position: relative;
+	width: 150px; /*largura*/
+	height: 150px; /*altura*/
+	background-color: #48159F;
+	border: 3px ridge #000088;
+	margin-left: 0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	padding-left: 10px;
+	float: left;
+}

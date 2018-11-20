@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Angelo Lucas</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div id="geral_ex">
+		<div id="menu">
+			<ul>
+			  <li><a href="index.html">Início</a></li>
+			  <li><a href="curriculum.html">Currículo</a></li>
+			  <li class="dropdown">
+				    <a href="javascript:void(0)" class="dropbtn">Exercícios</a>
+				    <div class="dropdown-content">
+				      <a href="exercicios_html.html">HTML</a>
+				      <a href="exercicios_css.html">CSS</a>
+				      <a href="exercicios_javascript.html">JavaScript</a>
+				      <a href="exercicios_jquery.html">jQuery</a>
+				    </div>
+			  <li><a href="about.html">Sobre</a></li>
+			</ul>
+		</div>
+
+		<div class="sidenav">
+		  <a href="#css_incorporado">CSS incorporado</a>
+		  <a href="#css_externo">CSS externo</a>
+		  <a href="#background">Background</a>
+		  <a href="#texto">Texto</a>
+		  <a href="#box_model">Margin; Padding; Border</a>
+		  <a href="#position">Position</a>
+		  <a href="#float">Float</a>
+		  <a href="#zindex">Z-Index</a>
+		  <a href="#hover_active">Hover e Active</a>
+		  <a href="#div">Div</a>
+		  
+		</div>
+
+		<div class="main">
+			<h1>CSS</h1>
+			<a name="css_incorporado"></a>
+		  	<h2>CSS Incorporado&emsp;<a href="exercicios/css/css_incorporado.html" target="_blank" class="class1">Visualizar</a></p></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;CSSIncorporado&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;style type="text/css"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;body{<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;background-color: #ffff00;<br>
+					&emsp;&emsp;&emsp;&emsp;}<br>
+					&emsp;&emsp;&lt;/style&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<a name="css_externo"></a>
+		  	<h2>CSS Externo&emsp;<a href="exercicios/css/css_externo.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;CSS Externo&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_css_externo.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;p&gt;Parágrafo de exemplo&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p&gt;Parágrafo de exemplo&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p id="p_2"&gt;Somente este parágrafo receberá a regra&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p class="p_4"&gt;A mesma classe pode ser usada para vários elementos&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		body{
+					background-color: #ff0000; /*cor do fundo*/
+				}
+
+				p{
+					font-family: "Trebuchet MS", 
+					Arial, Helvetica, sans-serif; /*tipo da fonte*/
+					font-size: 16px; /*tamanho da fonte*/
+					color: #ffffff; /*cor da fonte*/
+					font-weight: bold; /*texto em negrito*/
+				}
+
+				#p_2{
+					font-family: sans-serif;
+					font-size: 30px;
+					font-style: italic;
+					color: #009933;
+				}
+
+				.p_4{
+					font-family: sans-serif;
+					font-size: 8px;
+					color: #cc00ff;
+				}
+			</pre>
+
+		  	
+
+		  	<a name="background"></a>
+		  	<h2>Background&emsp;<a href="exercicios/css/background.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Background&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_background.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		body{
+					background-image: url("background.jpeg");
+					background-repeat: repeat-x;
+					background-position: right top;
+					background-attachment: fixed; /*define se imagem é fixa ou não*/
+				}
+			</pre>
+		  	
+
+			<a name="texto"></a>
+		  	<h2>Texto&emsp;<a href="exercicios/css/texto.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Texto&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_texto.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1&gt;Título&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;p class="maiusculo"&gt;parágrafo de exemplo&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p class="minusculo"&gt;PARÁGRAFO DE EXEMPLO&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p class="maimin"&gt;parágrafo de exemplo&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		h1{
+					text-decoration: underline;
+					text-align: center;
+				}
+
+				p{
+					text-align: right;
+				}
+
+				p.maiusculo{
+					text-transform: uppercase;
+				}
+
+				p.minusculo{
+					text-transform: lowercase;
+				}
+
+				p.maimin{
+					text-transform: capitalize;
+				}
+			</pre>
+		  	
+
+		  	<a name="box_model"></a>
+		  	<h2>Margin; Padding; Border&emsp;<a href="exercicios/css/box_model.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Box Model&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_box_model.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1 id="h1_1"&gt;Sintaxe do HTML&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;p id="p1"&gt;O box model (modelo de caixa) é a representação de um elemento retangular em uma página web.&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p id="p2"&gt;Quando falamos em retangulo sabemos que ele tem duas propriedades: altura e largura, certo? mas no caso do box model existem outras propriedades.&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		#h1_1 {
+					background-color: #81BEF7;
+					margin: 20px;
+					border: 10px;
+					padding: 30px;
+					text-align: center;
+					border-style: double;
+				}
+
+				#p1 {
+					background-color: #FF4000;
+					text-align: center;
+					font-size: 20px;
+					padding: 60px;
+					margin: 20px;
+					border-style: dashed;
+				}
+
+				#p2 {
+					background-color: #FF4000;
+					text-align: center;
+					font-size: 20px;
+					padding: 60px;
+					margin: 20px;
+					border-style: dashed;
+				}
+			</pre>
+
+		  	<a name="position"></a>
+		  	<h2>Position</h2>
+		  	<h3>Exemplo 1&emsp;<a href="exercicios/css/position.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Box Model&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_position.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;p&gt;aqui vai o texto. aqui vai o texto. aqui vai o texto. aqui vai o texto.&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;img src="background.jpeg"/&gt;<br>
+					&emsp;&emsp;&lt;p&gt;aqui vai o texto. aqui vai o texto. aqui vai o texto. aqui vai o texto.&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		img {
+					position: absolute;
+					top: 200px;
+					left: 200px;
+				}
+			</pre>
+
+		  	<h3>Exemplo 2&emsp;<a href="exercicios/css/position2.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<p id="obs">Basta alterar o css e a referência.</p>
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		img {
+					position: absolute;
+					top: 200px;
+					left: 200px;
+				}
+			</pre>
+
+
+
+		  	<a name="float"></a>
+		  	<h2>Float&emsp;<a href="exercicios/css/float.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Float&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_float.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;div class="eleDiv"&gt;Aqui vai o conteudo!&lt;/div&gt;<br>
+					&emsp;&emsp;&lt;div class="eleDiv2"&gt;Aqui vai o conteudo!&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		.eleDiv {
+					position: relative;
+					width: 150px; /*largura*/
+					height: 150px; /*altura*/
+					background-color: #4876FF;
+					border: 3px ridge #000088;
+					margin-left: 20px;
+					font-family: arial, helvetica, sans-serif;
+					font-size: 16px;
+					color: #FFFFFF;
+					padding-left: 10px;
+					float: left;
+				}
+
+				.eleDiv2 {
+					position: relative;
+					width: 150px; /*largura*/
+					height: 150px; /*altura*/
+					background-color: #48159F;
+					border: 3px ridge #000088;
+					margin-left: 0;
+					font-family: arial, helvetica, sans-serif;
+					font-size: 16px;
+					color: #FFFFFF;
+					padding-left: 10px;
+					float: left;
+				}
+			</pre>
+
+		  	<a name="zindex"></a>
+		  	<h2>Z-Index&emsp;<a href="exercicios/css/zindex.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<p id="obs">O conteúdo com maior z-index fica por cima.</p>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Z-Index&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_zindex.css"&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;div class="eleDiv"&gt;Aqui vai o conteudo!&lt;/div&gt;<br>
+					&emsp;&emsp;&lt;div class="eleDiv2"&gt;Aqui vai o conteudo!&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		.eleDiv {
+					position: absolute;
+					width: 150px; /*largura*/
+					height: 150px; /*altura*/
+					background-color: #4876FF;
+					font-family: arial, helvetica, sans-serif;
+					font-size: 16px;
+					color: #FFFFFF;
+					padding-left: 10px;
+					float: left;
+					z-index: 1;
+				}
+
+				.eleDiv2 {
+					position: absolute;
+					width: 150px; /*largura*/
+					height: 150px; /*altura*/
+					background-color: #4876FF;
+					font-family: arial, helvetica, sans-serif;
+					font-size: 16px;
+					color: #FFFFFF;
+					padding-left: 10px;
+					float: left;
+					z-index: 2;
+				}
+			</pre>
+
+			<h2>Hover e Active</h2>
+		  	<a name="hover_active"></a>
+		  	<h3>Hover aumentando o tamanho&emsp;<a href="exercicios/css/hover_active01.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Hover e Active&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_hover_active01.css"/&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;img src="background.jpeg" id="imagem"/&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		#imagem {
+					width: 150px;
+					height: 150px;
+				}
+
+				#imagem:hover {
+					width: 300px;
+					height: 300px;
+					/*ao passar o mouse será aumentada*/
+				}
+			</pre>
+
+			<h3>Hover mudando a cor&emsp;<a href="exercicios/css/hover_active02.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Hover e Active&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_hover_active02.css"/&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;div id="eleDiv"&gt;Aqui vai o conteudo!&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		#eleDiv {
+					position: relative;
+					width: 150px;
+					height: 150px;
+					background-color: #4876ff;
+				}
+
+				#eleDiv:hover {
+					background-color: #8b008b
+					/*ao passar o mouse mudará de cor*/
+				}
+
+				#eleDiv:active {
+					background-color: #00ff00;
+					/*ao clicar mudará de cor*/
+				}
+			</pre>
+
+	
+		  	<a name="div"></a>
+		  	<h2>Div - Tableless&emsp;<a href="exercicios/css/div.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Tableless&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;link rel="stylesheet" type="text/css" href="style_div.css"/&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;div id="geral"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;div id="cabecalho"&gt;Cabeçalho&lt;/div&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;div id="esquerda"&gt;Esquerda&lt;/div&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;div id="direita"&gt;Direita&lt;/div&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;div id="rodape"&gt;Rodapé&lt;/div&gt;<br>
+					&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.css</h4>
+		  	<pre id="css_exercicios">
+		  		* {
+					margin: 0;
+					padding: 0;
+				}
+
+				div {
+					text-align: center;
+					font-weight: bolder;
+				}
+
+				/*Divisões*/
+				#geral {
+					width: 80%;
+					height: 400px;
+					margin: 50px;
+					border-width: thin;
+					border-style: solid;
+				}
+
+				#Cabecalho {
+					background-color: #228B22;
+				}
+
+				#esquerda {
+					background-color: #CD950C;
+					float: left;
+					width: 25%;
+					height: 90%;
+				}
+
+				#direita {
+					background-color: #0000FF;
+					float: left;
+					width: 75%;
+					height: 90%;
+				}
+
+				#rodape {
+					background-color: #FF0000;
+					height: 5.5%;
+					clear: both;
+				}
+			</pre>
+
+		</div>
+	</div>
+</body>
+</html>

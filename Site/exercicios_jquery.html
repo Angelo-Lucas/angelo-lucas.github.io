@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Angelo Lucas</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div id="geral_ex">
+		<div id="menu">
+			<ul>
+			 <li><a href="index.html">Início</a></li>
+			  <li><a href="curriculum.html">Currículo</a></li>
+			  <li class="dropdown">
+				    <a href="javascript:void(0)" class="dropbtn">Exercícios</a>
+				    <div class="dropdown-content">
+				      <a href="exercicios_html.html">HTML</a>
+				      <a href="exercicios_css.html">CSS</a>
+				      <a href="exercicios_javascript.html">JavaScript</a>
+				      <a href="exercicios_jquery.html">jQuery</a>
+				    </div></li>
+			  <li><a href="about.html">Sobre</a></li>
+			</ul>
+		</div>
+
+		<div class="main">
+			<a name="intro"></a>
+			<h1>jQuery</h1>
+			<p id="obs">jQuery é uma biblioteca criada para simplificar a forma de codificação de JavaScript nos documentos web.<br>
+			"Write less, do more."</p>
+			<h2>Adicionar jQuery ao seu WebSite</h2>
+			<p id="texto_exercicios">Existem várias maneiras de começar a usar o jQuery em seu site. Você pode:<br><br>
+			&emsp;&emsp;Baixar a biblioteca jQuery de <a href="http://www.jquery.com/" target="_blank" class="class1">jquery.com;</a><br>
+			&emsp;&emsp;Incluir jQuery de um CDN, como o Google CDN.<br></p>
+			<h2>Baixar jQuery</h2>
+			<p id="texto_exercicios">
+			Existem duas versões do jQuery disponíveis para download:<br><br>
+			&emsp;&emsp;Versão de produção - Esta versão serve para ambientes de produção, é uma versão com o código em formato compactado, sem quebra de linhas e com o código sem comentários, possuindo apenas 15% do tamanho da que veremos a seguir;<br><br>
+    		&emsp;&emsp;Versão de desenvolvimento - Esta versão é para desenvolvimento, é a versão não compactada da biblioteca e possui o código todo comentado. Sendo ideal para ambientes de desenvolvimento, por se integrar facilmente com as ferramentas e IDEs.<br><br><br>
+
+    		A biblioteca jQuery é um único arquivo JavaScript e você faz referência a ela com a tag HTML &lt;script&gt; (observe que a tag &lt;script&gt; deve estar dentro da seção &lt;head&gt;):<br><br>
+
+			&lt;head&gt;<br>
+			&lt;script src = "jquery-3.3.1.min.js"&gt; &lt;/script&gt;<br>
+			&lt;/head&gt;<br><br>
+
+			Dica: Coloque o arquivo baixado no mesmo diretório das páginas em que você deseja usá-lo.
+    		</p>
+    		<h2>jQuery CDN</h2>
+			<p id="texto_exercicios">
+			Se você não quiser fazer o download e hospedar o jQuery, pode incluí-lo em um CDN. Para usar o jQuery do Google:<br>
+			&lt;head&gt;<br>
+			&lt;script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"&gt; &lt;/script&gt;<br>
+			&lt;/head&gt;<br><br></p>
+
+			<h2>Exemplos</h2>
+			<p id="obs">Lembre-se de colocar o código no mesmo diretório das pastas "css" e "js" do jquery.</p>
+		  	<h3>Exemplo 01&emsp;<a href="exercicios/jquery/jquery_ex01.html" target="_blank" class="class1">Visualizar</a></p></h3>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JQuery&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script src="js/jquery-3.3.1.min.js"&gt;&lt;/script&gt;<br>
+					&emsp;&emsp;&lt;script&gt;<br>
+					&emsp;&emsp;$(document).ready(function(){<br>
+					&emsp;&emsp;&emsp;&emsp;$("h1")<br>
+					&emsp;&emsp;&emsp;&emsp;.css("color", "#8e2323")<br>
+					&emsp;&emsp;&emsp;&emsp;.hide()<br>
+					&emsp;&emsp;&emsp;&emsp;.delay('2000')<br>
+					&emsp;&emsp;&emsp;&emsp;.fadeIn("slow")<br>
+					&emsp;&emsp;&emsp;&emsp;.text("Alterei o titulo");<br>
+					&emsp;&emsp;});<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1&gt;Meu primeiro exemplo&lt;/h1&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h3>Exemplo 02&emsp;<a href="exercicios/jquery/jquery_ex02.html" target="_blank" class="class1">Visualizar</a></p></h3>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JQuery&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script src="js/jquery-3.3.1.min.js"&gt;&lt;/script&gt;<br>
+					&emsp;&emsp;&lt;script&gt;<br>
+					&emsp;&emsp;$(document).ready(function(){<br>
+					&emsp;&emsp;&emsp;&emsp;$("h1")<br>
+					&emsp;&emsp;&emsp;&emsp;.css("color", "#8e2323")<br>
+					&emsp;&emsp;&emsp;&emsp;.hide()<br>
+					&emsp;&emsp;&emsp;&emsp;.delay('2000')<br>
+					&emsp;&emsp;&emsp;&emsp;.fadeIn("slow")<br>
+					&emsp;&emsp;&emsp;&emsp;$("body").css("background","#FFCC00");<br>
+					&emsp;&emsp;&emsp;&emsp;$("#div1").css({"margin":"30px", "background": "#ffffff"});<br>
+					&emsp;&emsp;&emsp;&emsp;$("#div1 p").css({color:"#0000ff","font-size":"20px"});<br>
+					&emsp;&emsp;&emsp;&emsp;$("#div1 h1").css({color:"0000ff", "font-size":"20px"});<br>
+					&emsp;&emsp;});<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1&gt;Seletores hierarquicos&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;div id="div1"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;h1&gt;Seletores hierarquicos div&lt;/h1&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p&gt;Informações importantes&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;/div&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h3>Exemplo 03&emsp;<a href="exercicios/jquery/jquery_ex03.html" target="_blank" class="class1">Visualizar</a></p></h3>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JQuery&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script src="js/jquery-3.3.1.min.js"&gt;&lt;/script&gt;<br>
+					&emsp;&emsp;&lt;script&gt;<br>
+					&emsp;&emsp;$(document).ready(function(){<br>
+					&emsp;&emsp;&emsp;&emsp;$("h1")<br>
+					&emsp;&emsp;&emsp;&emsp;.css("color", "#8e2323")<br>
+					&emsp;&emsp;&emsp;&emsp;.hide()<br>
+					&emsp;&emsp;&emsp;&emsp;.delay('2000')<br>
+					&emsp;&emsp;&emsp;&emsp;.fadeIn("slow")<br>
+					&emsp;&emsp;&emsp;&emsp;.click(function(){<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$("body").css("background","#FFCC00")<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;$("p").css("color","#FFFFFF")<br>
+					&emsp;&emsp;&emsp;&emsp;});<br>
+					&emsp;&emsp;});<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+					&lt;/head&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1&gt;Seletores hierarquicos&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;p&gt;Informações importantes&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+		</div>
+	</div>
+</body>
+</html>

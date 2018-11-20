@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Angelo Lucas</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+</head>
+<body>
+	<div id="geral_ex">
+		<div id="menu">
+			<ul>
+			  <li><a href="index.html">Início</a></li>
+			  <li><a href="curriculum.html">Currículo</a></li>
+			  <li class="dropdown">
+				    <a href="javascript:void(0)" class="dropbtn">Exercícios</a>
+				    <div class="dropdown-content">
+				      <a href="exercicios_html.html">HTML</a>
+				      <a href="exercicios_css.html">CSS</a>
+				      <a href="exercicios_javascript.html">JavaScript</a>
+				      <a href="exercicios_jquery.html">jQuery</a>
+				    </div>
+			  <li><a href="about.html">Sobre</a></li>
+			</ul>
+		</div>
+
+		<div class="sidenav">
+		  <a href="#javascript_incorporado">JavaScript incorporado</a>
+		  <a href="#javascript_externo">JavaScript externo</a>
+		  <a href="#alert">alert()</a>
+		  <a href="#getelementbyid">getElementById()</a>
+		  <a href="#onclick">onclick()</a>
+		  <a href="#onmouseover">onmouseover()</a>
+		  <a href="#alterar_estilo">Alterar estilo</a>
+		  <a href="#prompt">prompt()</a>
+		  <a href="#confirm">confirm()</a>
+		  <a href="#variaveis">Variáveis</a>
+		  <a href="#funcoes">Funções</a>
+		  <a href="#data_hora">Data e Hora</a>
+		  <a href="#length">length()</a>
+		  <a href="#validacao">Validação</a>
+		  
+		</div>
+
+		<div class="main">
+			<h1>JavaScript</h1>
+			<a name="javascript_incorporado"></a>
+		  	<h2>JavaScript Incorporado&emsp;<a href="exercicios/javascript/javascript_incorporado.html" target="_blank" class="class1">Visualizar</a></p></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JavaScript Incorporado&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;document.write ("Aqui é JavaScript");
+					&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<a name="javascript_externo"></a>
+		  	<h2>JavaScript Externo&emsp;<a href="exercicios/javascript/javascript_externo/index.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JavaScript Externo&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript" src="logica.js"&gt;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.js</h4>
+		  	<pre id="css_exercicios">
+		  		document.write ("Aqui é JavaScript");
+			</pre>
+
+		  	
+
+		  	<a name="alert"></a>
+		  	<h2>alert()&emsp;<a href="exercicios/javascript/alert.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;JavaScript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;alert("olá mundo!");<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+		  	
+
+			<a name="getelementbyid"></a>
+		  	<h2>getElementById()&emsp;<a href="exercicios/javascript/getelementbyid.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;getElementById&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;h1&gt;JavaScript&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;p id="mens"&gt;&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;script&gt;document.getElementById("mens").innerHTML = "Bem Vindo!";&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	
+
+		  	<a name="onclick"></a>
+		  	<h2>onclick()&emsp;<a href="exercicios/javascript/onclick.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;p id="p1"&gt;Meu primeiro exemplo Javascript&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;button type="button" onClick='document.getElementById("p1").innerHTML = "Agora é JavaScript"'&gt;Clique aqui!&lt;/button&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="onmouseover"></a>
+		  	<h2>onmouseover()&emsp;<a href="exercicios/javascript/onmouseover/onmouseover.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;p id="p1"&gt;Meu primeiro exemplo Javascript&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;img src="gato.jpg" onMouseOver="src='leao.jpg'" onMouseOut="src='gato.jpg'"/&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="alterar_estilo"></a>
+		  	<h2>Alterar estilo&emsp;<a href="exercicios/javascript/alterar_estilo.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;p id="p1"&gt;Bem vindo&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;button type="button" onClick="document.getElementById('p1').style.color='#009900'"&gt;Clique aqui&lt;/button&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<a name="prompt"></a>
+		  	<h2>prompt()&emsp;<a href="exercicios/javascript/prompt.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;header&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p id="nome"&gt;&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;/header&gt;<br>
+					&emsp;&emsp;&lt;script&gt;<br>
+					&emsp;&emsp;var usuario = prompt("Informe seu nome", "Nome");<br>
+					&emsp;&emsp;document.getElementById("nome").innerHTML = "Olá " + usuario;<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="confirm"></a>
+		  	<h2>confirm()&emsp;<a href="exercicios/javascript/confirm.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;h1&gt;JavaScript&lt;/h1&gt;<br>
+					&emsp;&emsp;&lt;button type="button" onClick="confirm('Confirme a opção.\nEscolha cancelar ou OK')"&gt;Clique aqui&emsp;&emsp;&lt;/button&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="variaveis"></a>
+		  	<h2>Variáveis</h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;num = 3858;<br><br>
+					&emsp;&emsp;&emsp;&emsp;var msg1;<br>
+					&emsp;&emsp;&emsp;&emsp;var msg2;<br><br>
+					&emsp;&emsp;&emsp;&emsp;var num1, nome1, msg1;<br><br>
+					&emsp;&emsp;&emsp;&emsp;var nome2 = "João", num2 = 12, msg2 = "telefone do João: 1234-5678";<br><br>
+					&emsp;&emsp;&emsp;&emsp;function cliente(){<br>
+						&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;var nome3 = "João";<br>
+					&emsp;&emsp;&emsp;&emsp;}<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<h2>Funções</h2>
+		  	<a name="funcoes"></a>
+		  	<h3>Função sem parâmetros&emsp;<a href="exercicios/javascript/funcao_sem_parametros.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;function mens(){<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert("Olá");<br>
+					&emsp;&emsp;&emsp;&emsp;}<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;mens();<br>
+					&emsp;&emsp;&emsp;&emsp;mens();<br>
+					&emsp;&emsp;&emsp;&emsp;mens();<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="funcao_com_parametros"></a>
+		  	<h3>Função com parâmetros&emsp;<a href="exercicios/javascript/funcao_com_parametros.html" target="_blank" class="class1">Visualizar</a></h3>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;function mens(quem1, quem2){<br>
+					&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;alert("Olá " + quem1 + ", olá " + quem2);<br>
+					&emsp;&emsp;&emsp;&emsp;}<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;script type="text/javascript"&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;nome1 = "Carlos"<br>
+					&emsp;&emsp;&emsp;&emsp;nome2 = "Eder"<br>
+					&emsp;&emsp;&emsp;&emsp;mens(nome1, nome2);<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="data_hora"></a>
+		  	<h2>Data e Hora&emsp;<a href="exercicios/javascript/data_hora/data_hora.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+					&emsp;&emsp;&lt;script src="logica.js"&gt;&lt;/script&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body onload="Tempo(), nData()"&gt;<br>
+					&emsp;&emsp;&lt;p id="horario"&gt;&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;p id="n_data"&gt;&lt;/p&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.js</h4>
+		  	<pre id="css_exercicios">
+		  		function Tempo(){
+					horario = new Date()
+					hora = horario.getHours()
+					minuto = horario.getMinutes()
+					segundo = horario.getSeconds()
+					if(hora &lt; 10){
+						hora = "0" + hora
+					}
+					if(minuto &lt; 10){
+						minuto = "0" + minuto
+					}
+					if(segundo &lt; 10){
+						segundo = "0" + segundo
+					}
+					document.getElementById("horario").innerHTML =
+					hora + ":" + minuto + ":" + segundo;
+				}
+
+
+				function nData(){
+					data = new Date()
+					dia = data.getDate()
+					mes = data.getMonth() + 1
+					ano = data.getFullYear()
+					if(dia &lt; 10){
+						dia = "0" + dia
+					}
+					if(mes &lt; 10){
+						mes = "0" + mes
+					}
+					document.getElementById("n_data").innerHTML =
+					dia +"/" + mes + "/" + ano;
+				}
+			</pre>
+
+
+			<a name="length"></a>
+		  	<h2>length()&emsp;<a href="exercicios/javascript/length/length.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+					&emsp;&emsp;&lt;meta charset="utf-8"&gt;<br>
+					&emsp;&emsp;&lt;title&gt;Javascript&lt;/title&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;header&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;p id="nome"&gt;&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;/header&gt;<br>
+					&emsp;&emsp;&lt;script&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;var txt = "Ana Amélia";<br>
+					&emsp;&emsp;&emsp;&emsp;document.getElementById("nome").innerHTML = txt.length;<br>
+					&emsp;&emsp;&lt;/script&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+
+		  	<a name="validacao"></a>
+		  	<h2>Validação&emsp;<a href="exercicios/javascript/validacao.html" target="_blank" class="class1">Visualizar</a></h2>
+		  	<h4>.html</h4>
+		  	<p id="texto_exercicios">
+		  		&lt;!DOCTYPE html&gt;<br>
+				&lt;html&gt;<br>
+				&lt;head&gt;<br>
+				&lt;/head&gt;<br>
+				&lt;body&gt;<br>
+					&emsp;&emsp;&lt;form name="fcadastro" action="mailto:christienrachid@gmail.com" method="POST" onSubmit="return validacao();"&gt;<br>
+					&emsp;&emsp;&lt;p&gt;&lt;label for="iNome"&gt;Digite seu nome: &lt;/label&gt;<br>
+					&emsp;&emsp;&emsp;&emsp;&lt;input type="text" name="tNome" required/&gt;<br>
+					&emsp;&emsp;&lt;/p&gt;<br>
+					&emsp;&emsp;&lt;input type="submit" name="submit" value="enviar"/&gt;<br>
+					&emsp;&emsp;&lt;/form&gt;<br>
+				&lt;/body&gt;<br>
+				&lt;/html&gt;
+		  	</p>
+
+		  	<h4>.js</h4>
+		  	<pre id="css_exercicios">
+		  		function validacao() {
+					if(document.fcadastro.tNome.value == "") {
+						alert("Digite seu nome");
+						document.fcadastro.tNome.focus();
+						return false;
+					}
+				}
+			</pre>
+		</div>
+	</div>
+</body>
+</html>

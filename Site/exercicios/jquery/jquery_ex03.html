@@ -1,0 +1,26 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JQuery</title>
+	<script src="js/jquery-3.3.1.min.js"></script>
+	
+	<script> 
+	$(document).ready(function(){
+		$("h1")
+		.css("color", "#8e2323")
+		.hide()
+		.delay('2000')
+		.fadeIn("slow")
+		.click(function(){
+			$("body").css("background","#FFCC00")
+			$("p").css("color","#FFFFFF")
+		});
+	});
+	</script>
+</head>
+<body>
+	<h1>Seletores</h1>
+	<p>Informações importantes</p>
+</body>
+</html>
